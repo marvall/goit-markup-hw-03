@@ -1,0 +1,237 @@
+/* -------------  HEADER STYLE --------*/
+:root {
+  --logo-font: "Raleway", sans-serif;
+  --main-font: "Roboto", sans-serif;
+  --main-action-color: #2196f3;
+  --main-text-color: #757575;
+  --main-title-color: #212121;
+  --secendary-text-color: #ffffff;
+  --logo-main: #000000;
+  --bg-footer: #2f303a;
+  --secendary-footer-color: rgba(255, 255, 255, 0.6);
+  --svg-color: #afb1b8;
+  --bg-what-we-do-tittle: rgba(47, 48, 58, 0.8);
+  --bg-button: #f5f4fa;
+  --bg-action-color: rgba(33, 150, 243, 0.9);
+}
+body {
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+/* ---- Styles for most links ----- */
+.link {
+  text-decoration: none;
+}
+/* --- Styles for most list --- */
+.list {
+  list-style: none;
+}
+/* --- Styles for most tittle --- */
+.title {
+  color: var(--main-title-color);
+  letter-spacing: 0.03em;
+}
+
+.section-title {
+  color: var(--main-title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16em;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* -------------  HEADER STYLE END  --------*/
+/* ---- LOGO ----- */
+.logo {
+  color: var(--logo-main);
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2em;
+}
+
+.footer .logo {
+  color: var(--secendary-text-color);
+}
+
+.logo > span {
+  color: var(--main-action-color);
+}
+
+/* ---- Navigation menu ----*/
+
+.main-menu .link {
+  color: var(--main-title-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.33em;
+  letter-spacing: 0.02em;
+}
+.contact-menu .link {
+  color: var(--main-text-color);
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.33em;
+  letter-spacing: 0.02em;
+}
+
+.main-menu .link:focus,
+.main-menu .link:hover,
+.contact-menu .link:hover {
+  color: var(--main-action-color);
+}
+
+.link.state-active {
+  /* status active page*/
+  color: var(--main-action-color);
+}
+
+/* ----SECTION HERO-----*/
+.hero {
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero.title {
+  color: var(--secendary-text-color);
+  /* Добавлен временно пока нет фоновой картинки в секции*/
+  background-color: var(--bg-button);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36em;
+  text-transform: uppercase;
+}
+.hero.button {
+  background-color: var(--main-action-color);
+  color: var(--secendary-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87em;
+}
+/* ---- SECTIOND "Наши Принципы" ---- */
+.our-principles .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14em;
+  text-transform: uppercase;
+}
+
+.our-principles .description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17em;
+}
+
+/* ----SECTION WHAT WE DO----*/
+.what-we-do {
+  letter-spacing: 0.03em;
+}
+
+/* стили для заголовка описаны в section-title в шапке файле*/
+.what-we-do .description {
+  background-color: var(--bg-what-we-do-tittle);
+  color: var(--secendary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14em;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* ---- SECTION OUR TEAM ----*/
+.our-team {
+  background-color: var(--bg-button);
+  letter-spacing: 0.03em;
+}
+
+.our-team .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18em;
+  text-align: center;
+}
+.our-team .description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18em;
+  text-align: center;
+}
+
+.our-team .social-page {
+  color: var(--svg-color);
+}
+.our-team .social-page:hover,
+.our-team .social-page:focus {
+  background-color: var(--main-action-color);
+}
+
+/* ---- SECTION COMPANY ----*/
+
+/*  ---- FOOTER  -----*/
+.footer {
+  background-color: var(--bg-footer);
+  letter-spacing: 0.03em;
+}
+.contact .link {
+  color: var(--secendary-footer-color);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71em;
+}
+.footer .maps {
+  color: var(--secendary-text-color);
+}
+.footer p {
+  color: var(--secendary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14em;
+  text-transform: uppercase;
+}
+
+/*============================================================*/
+
+/* -------PORTFOLIO PAGE--------*/
+
+/*---Filter-button---*/
+
+.filter-menu-button {
+  background-color: var(--bg-button);
+  color: var(--main-title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.33em;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.filter-menu-button.state-active,
+.filter-menu-button:hover,
+.filter-menu-button:focus {
+  background-color: var(--main-action-color);
+  color: var(--secendary-text-color);
+}
+
+/*---- PRODUCT SECTION -----*/
+
+.product-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+}
+.product-type {
+  color: var(--main-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87em;
+}
+.product-description {
+  background-color: var(--bg-action-color);
+  color: var(--secendary-text-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55em;
+  letter-spacing: 0.03em;
+}
