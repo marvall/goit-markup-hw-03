@@ -20,6 +20,10 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
 }
+ul {
+  margin: 0px;
+  padding: 0px;
+}
 /* ---- Styles for most links ----- */
 .link {
   text-decoration: none;
@@ -34,6 +38,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .section-title {
   color: var(--main-title-color);
   font-weight: 700;
@@ -44,6 +55,10 @@ body {
 }
 /* -------------  HEADER STYLE END  --------*/
 /* ---- LOGO ----- */
+.header > .conteiner {
+  display: flex;
+}
+
 .logo {
   color: var(--logo-main);
   font-family: var(--logo-font);
@@ -61,21 +76,46 @@ body {
 }
 
 /* ---- Navigation menu ----*/
+.main-navigation {
+  display: flex;
+  align-items: center;
+}
+.main-menu {
+  display: flex;
+  margin-left: 85px;
+}
 
 .main-menu .link {
+  display: block;
   color: var(--main-title-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.33em;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.main-menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contact-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 .contact-menu .link {
+  display: block;
   color: var(--main-text-color);
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
   line-height: 1.33em;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contact-menu li:not(:last-child) {
+  margin-right: 50px;
 }
 
 .main-menu .link:focus,
