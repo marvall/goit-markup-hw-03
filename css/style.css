@@ -31,6 +31,11 @@ h4 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* ---- Styles for most links ----- */
 .link {
   text-decoration: none;
@@ -50,12 +55,16 @@ h4 {
 .social-page > li:not(:last-child) {
   margin-right: 10px;
 }
-.conteiner {
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section-title {
   margin-bottom: 50px;
@@ -71,7 +80,7 @@ h4 {
 .header {
   border-bottom: 1px solid #ececec;
 }
-.header > .conteiner {
+.header > .container {
   display: flex;
 }
 
@@ -182,8 +191,7 @@ h4 {
 }
 /* ---- SECTIOND "Наши Принципы" ---- */
 .principles-section {
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding-bottom: 0px;
 }
 .our-principles {
   display: flex;
@@ -198,7 +206,7 @@ h4 {
 .our-principles > li:not(:last-child) {
   margin-right: 30px;
 }
-.principles-img-conteiner {
+.principles-img-container {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -207,20 +215,16 @@ h4 {
   margin-bottom: 30px;
   background-color: var(--bg-button);
 }
-.our-principles img {
-  margin: auto;
-  /* margin-bottom выровняется до 55 когда отрисуется SVG*/
-}
 
 .our-principles .description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.17em;
+  margin: 0px;
 }
 
 /* ----SECTION WHAT WE DO----*/
 .what-we-do {
-  padding-bottom: 95px;
   letter-spacing: 0.03em;
 }
 .what-we-do-list {
@@ -238,11 +242,10 @@ h4 {
   line-height: 1.14em;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 /* ---- SECTION OUR TEAM ----*/
 .our-team {
-  padding-bottom: 95px;
-  padding-top: 95px;
   background-color: var(--bg-button);
   letter-spacing: 0.03em;
 }
@@ -264,6 +267,7 @@ h4 {
   margin-bottom: 10px;
 }
 .our-team-list .description {
+  margin: 0;
   margin-bottom: 16px;
 }
 .our-team-list .social-page {
@@ -291,10 +295,6 @@ h4 {
 }
 
 /* ---- SECTION COMPANY ----*/
-.company {
-  padding-top: 95px;
-  padding-bottom: 95px;
-}
 .company-list {
   display: flex;
 }
@@ -319,7 +319,7 @@ h4 {
   background-color: var(--bg-footer);
   letter-spacing: 0.03em;
 }
-.footer .conteiner {
+.footer .container {
   display: flex;
 }
 .contact .link {
@@ -338,6 +338,8 @@ h4 {
   font-size: 14px;
   line-height: 1.14em;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 12px;
   margin-bottom: 20px;
 }
 .footer-left-block {
@@ -355,10 +357,7 @@ h4 {
 /*============================================================*/
 
 /* -------PORTFOLIO PAGE--------*/
-.our-product {
-  padding-bottom: 95px;
-  padding-top: 95px;
-}
+
 /*---Filter-button---*/
 .filter-menu {
   display: flex;
@@ -400,6 +399,7 @@ h4 {
   letter-spacing: 0.06em;
 }
 .product-type {
+  margin: 0;
   color: var(--main-text-color);
   font-weight: 400;
   font-size: 16px;
