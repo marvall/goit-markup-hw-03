@@ -69,7 +69,7 @@ h4 {
 /* -------------  HEADER STYLE END  --------*/
 /* ---- LOGO ----- */
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header > .conteiner {
   display: flex;
