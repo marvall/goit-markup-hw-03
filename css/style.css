@@ -406,6 +406,7 @@ img {
   line-height: 1.87em;
 }
 .product-description {
+  margin: 0;
   background-color: var(--bg-action-color);
   color: var(--secendary-text-color);
   font-weight: 400;
@@ -420,7 +421,6 @@ img {
 }
 .product-content-item {
   width: 370px;
-  height: 404px;
 }
 .product-content-item:not(:nth-child(3n)) {
   margin-right: 30px;
